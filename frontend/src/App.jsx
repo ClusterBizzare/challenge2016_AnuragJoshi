@@ -27,7 +27,7 @@ const App = () => {
         <div className="container mx-auto px-4 max-w-3xl">
           <div className="flex flex-col items-center justify-center space-y-4">
             <p className="text-sm text-slate-500">
-              © 2024 Your Company. All rights reserved.
+              © 2024 Qube Cinema. All rights reserved.
             </p>
             <div className="flex items-center space-x-4">
               <a href="#" className="text-sm text-slate-500 hover:text-slate-700">Terms</a>
