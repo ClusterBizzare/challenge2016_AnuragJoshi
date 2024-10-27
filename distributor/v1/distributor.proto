@@ -1,0 +1,35 @@
+syntax="proto3";
+
+package distributor.v1;
+
+option go_package = "distributor/v1";
+
+
+message CreateDistributorRequest {
+    string name = 1;
+    string parent = 2;
+    repeated string include = 3;
+    repeated string exclude = 4;
+}
+
+message CreateDistributorResponse {
+    string status = 1;
+    string message = 2;
+}
+
+message CheckPermissionRequest {
+    string name = 1;
+    string region = 2;
+}
+
+message CheckPermissionResponse {
+    string message = 1;
+}
+
+service CreateDistributorService {
+     rpc CreateDistributor(CreateDistributorRequest) returns (CreateDistributorResponse);
+}
+
+service CheckPermissionService {
+    rpc CheckPermission (CheckPermissionRequest) returns (CheckPermissionResponse);
+}

@@ -1,0 +1,18 @@
+DISTRIBUTOR1:
+    include:
+        - IN
+        - US
+    exclude:
+        - KA-IN
+        - CENAI-TN-IN
+DISTRIBUTOR2:
+    include:
+        - IN
+    exclude:
+        - AP-IN
+    parent: DISTRIBUTOR1
+DISTRIBUTOR3:
+    include:
+        - SHOIU-TN-IN
+    exclude: []
+    parent: DISTRIBUTOR2
